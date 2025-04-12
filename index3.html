@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <section id="home" class="section">
+        <h1>THIS IS SHREYAS NAYAN KAMAT!</h1>
+        <h2>WELCOME TO MY PORTFOLIO!</h2>
+    </section>
+    <section id="about" class="section">
+        <h1>ABOUT ME!</h1>
+        <p>Hey this is Shreyas Nayan Kamat. I am currently persueing btech in Information Science for RVCE,Bangalore. I am someone who is passionate about coding and love learning new things.I like cycling and playing TT in my free time.</p>
+    </section>
+    <section id="education" class="education-section">
+        <h1 class="Edu-title">MY EDUCATION!</h1>
+        <div class="education-card">
+            <div class="card-content">
+                <h2>R.V. College of Engineering</h2>
+                <p>Bengaluru, India</p>
+                <p>Bachelor of Information Science and Engineering</p>
+                <p> (2024-28)</p>
+                <a href="https://www.rvce.edu.in/" target="_blank"
+                class="clg-link">VISIT WEBSITE</a>
+            </div>
+        </div>
+        <div class="education-card">
+            <div class="card-content">
+                <h2>Vedantha PU College</h2>
+                <p>Bengaluru, India</p>
+                <p>PUC</p>
+                <p>(2022-24) - 93.5%</p>
+                <a href="https://vedanthacollege.com/" target="_blank"
+                class="clg-link">VISIT WEBSITE</a>            
+            </div>
+        </div>
+        <div class="education-card">
+            <div class="card-content">
+                <h2>Clarence Public School</h2>
+                <p>Bengaluru, India</p>
+                <p>ICSE</p>
+                <p>(2010-22) - 97.6%</p>
+                <a href="https://clarencepublicschool.com/team/" target ="_blank"
+                class="clg-link">VISIT WEBSITE</a>
+                </div>
+        </div>
+
+    </section>
+    <section id="skills" class="skills">
+        <h1 class="skills-title">SKILLS</h1>
+        <div class="skill-grid">
+        <div class="skill-card">
+        <img src="image/c++.png" alt="C++"
+        class="skill-img">
+        </div>
+        <div class="skill-card">
+            <img src="image/c.png" alt="C "
+            class="skill-img">
+        </div>
+        <div class="skill-card">
+            <img src="image/java.png" alt ="Java"
+            class="skill-img">
+        </div>
+        <div class="skill-card">
+            <img src="image/html.png" alt="HTML"
+            class="skill-img">
+        </div>
+        <div class="skill-card">
+            <img src="image/css.png" alt="CSS"
+            class="skill-img">
+        </div>
+        <div class="skill-card">
+            <img src="image/js.png" alt="JavaScript"
+        class="skill-img">
+        </div>
+    </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1 class="contact-title">CONTACT ME</h1>
+        <div class ="contact-grid">
+        <div class ="info">
+        <p>Email: shreyasnayank.is24@rvce.edu.in</p>
+        <p>Phone no.: +91 9380372671</p>
+        </div>
+        <form class ="contact-form">
+            <input type ="text" placeholder="Your Name">
+            <input type ="mail" placeholder="Your mail">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shreyas-kamat-b9324531b/" target="_blank"
+            class="linkedin-btn">LinkedIn </a>
+            <a href="https://github.com/ShreyasNK2006" target="_blank"
+            class="github-btn">GitHub</a>
+        </div>
+    </div>
+    </section>    
+</body>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+    .section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar{
+        position: fixed;
+        top: 0; /* Stick to the top */
+        width: 100%;
+        background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        size: 1rem;
+    }
+    .navbar a:hover{
+        color: yellow;
+    }
+    #home{
+        background: linear-gradient(to bottom,#3356ff,  #4a9fff);
+        color: white;
+    }
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home h2 {
+        font-size: 3rem;
+    }
+    #about {
+    background: linear-gradient(to bottom,#4a9fff,#3356ff);
+    color: #ff8d03;
+    }
+    #about p{
+        font-size: 2em;
+    }
+    #about h1{
+        font-size: 3rem;
+    }
+    .education-card {
+    width: 80%;
+    max-width: 600px;
+    background-color: black; 
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px #ff1a03(255, 140, 0, 0.5); 
+    gap: 10px;
+}
+#education{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,#3356ff,  #4a9fff);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+#education h1{
+    font-size: 3rem;
+}
+.education-card:hover {
+    transform: scale(1.05);
+    border: 2px solid red;
+}
+.card-content h2 {
+    color: red; /* Highlighted title color */
+}
+.card-content p {
+    margin-top: 10px;
+}
+.clg-link{
+    display: inline-block; 
+    margin-top: 10px; /* Adds space between text and button */
+    padding: 10px 10px; /* Button size */
+    background-color:#03e5e5; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px;
+}
+.skills{
+    display: grid;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background: linear-gradient(to bottom,#4a9fff,#3356ff);
+}
+.skills-title{
+    font-size: 2.4rem;
+    color: black;
+}
+.skill-card{
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  0 1px 5px rgba(255, 140, 0, 0.5);
+    height: 30%;
+}
+.skill-img{
+    width: 80px;
+}
+.skill-card:hover{
+    transform: scale(1.05);
+    border: 1px solid orange;
+}
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    justify-content: center;
+    gap: 20px;
+}
+.skill-card p{
+    margin-top: 10px;
+}
+#contact{
+    background: linear-gradient(to bottom,#3356ff,  #4a9fff);
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+#contact h1 {
+    font-size: 3rem;
+}
+#contact p {
+    font-size: 1.5rem;
+}
+.contact-grid {
+    padding: 200px;
+    border-radius: 15px;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+    
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%; 
+    max-width: 400px; 
+    height: 40px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background-color: black;
+    color: white; 
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: white;
+}
+.contact-form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button:hover {
+    color: red;
+    border: 2px solid blue;
+    background: purple;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-links a {
+    padding: 10px 20px;
+    border-radius : 5px;
+    text-decoration: none;
+}
+.linkedin-btn{
+    background-color: black;
+    color: white;
+}
+.linkedin-btn:hover {
+    color: yellow;
+    border: 2px solid yellow;
+}
+.github-btn{
+    background-color: black;
+    color: white;
+}
+.github-btn:hover {
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+
+
+
+
+
+
